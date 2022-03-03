@@ -43,7 +43,9 @@ const ExcuseCard: React.FC<ExcuseData> = ({ category, excuse, id }) => {
         </h5>
         <p className="card-text">{excuse || "Excuse not found"}</p>
         <button className="btn btn-primary">
-          <Link href={`./excuse/${id}`}>Open Alone</Link>
+          <Link href={`./excuse/${id}`}>
+            <a>Open separately</a>
+          </Link>
         </button>
       </div>
     </div>
